@@ -28,12 +28,6 @@ html {
 }
 
 
-.lacquer-regular {
-  font-family: "Lacquer", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 
 .card img{
@@ -41,6 +35,8 @@ html {
     aspect-ratio:8/5;
     object-fit:cover;
     display:block;
+}
+low: hidden;
 }
 
 
@@ -192,6 +188,9 @@ a:focus {
 }
 
 
+
+
+
 .hero{
  padding: 60px 0px 60px 0px;
 }
@@ -240,8 +239,6 @@ a:focus {
     margin-top:30px;
     display:flex;
     gap:15px;
-	
-	
 }
 
 a.button {
@@ -326,9 +323,7 @@ a.button.secondary:hover {
     margin-bottom:40px;
 }
 
-.job{
-    margin-bottom:40px;
-}
+
 
 .portfolio-grid{
     display:grid;
@@ -372,7 +367,7 @@ a.button.secondary:hover {
 
 #contact a,
 #contact a:visited {
-    color:#ffffff;
+
     text-decoration:none;
 }
 
@@ -429,32 +424,7 @@ a.button.secondary:hover {
     gap:30px;
 }
 
-.testimonial-card{
-    background:#171717;
-    border-radius:15px;
-    padding:20px;
-    position:relative;
 
-    display:flex;
-    flex-direction:column;
-}
-
-.testimonial-card p{
-    line-height:1.7;
-    margin-bottom:25px;
-    color:#ddd;
-}
-
-.testimonial-card h4{
-      margin-top:auto;
-    margin-bottom:5px;
-    color:#fff;
-}
-
-.testimonial-card span{
-    color:#999;
-    font-size:0.95rem;
-}
 
 
 
@@ -464,7 +434,7 @@ h1 a:hover,
 nav a:hover,
 .card a:hover,
 #contact a:hover {
-    color:#5FAD56;
+
 }
 
 
