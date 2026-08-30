@@ -273,10 +273,28 @@ a:focus {
     margin-bottom:20px;
 }
 
+
+
+
+
 .buttons{
-    margin-top:30px;
-    display:flex;
-    gap:15px;
+ position: relative;
+    display: inline-block;
+    padding: 1px 6px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    border-radius: 7px 11px 6px 9px;
+    transform: rotate(-0.5deg);
+}
+
+.hand-button::after {
+    content: "";
+    position: relative;
+    inset: -4px;
+    border: 1.5px solid #fff;
+    border-radius: 8px 5px 11px 6px;
+    transform: rotate(1.2deg);
 }
 
 a.button {
@@ -289,8 +307,7 @@ a.button {
 }
 
 a.button:hover {
-    background:#5FAD56;
-    color:#ffffff;
+padding:9px 20px;
 }
 
 a.button.secondary {
