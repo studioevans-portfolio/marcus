@@ -540,6 +540,13 @@ color: white;
 }
 
 
+@media (max-width: 768px) {
+    h3 {
+        font-family: 'Beth Ellen', cursive;
+}
+
+
+
 
 
 a:hover,
