@@ -20,7 +20,11 @@ html {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
 
+.beth-ellen {
+  font-family: 'Beth Ellen', cursive !important;
+}
 
 
 
