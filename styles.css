@@ -21,11 +21,6 @@ html {
 
 
 
-.syne-mono-regular {
-  font-family: "Syne Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 
@@ -286,14 +281,12 @@ a.button.secondary:hover {
 }
 
 
-
-	
-
 .skills{
     display:flex;
     flex-wrap:wrap;
     gap:20px;
     margin-top:0px;
+		margin-bottom: 60px;
 }
 
 .skill{
@@ -309,6 +302,38 @@ a.button.secondary:hover {
     font-weight:500;
     transition:all 0.3s ease;
     cursor:default;
+}
+
+	
+
+#skills-mobile .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 0;
+	margin-bottom: 60px;
+}
+
+#skills-mobile .skill {
+    padding: 14px 10px;
+    min-height: 50px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+
+#skills-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #skills-mobile {
+        display: block;
+    }
+
+    #skills {
+        display: none;
+    }
 }
 
 
