@@ -117,6 +117,20 @@ header{
 
 
 
+header .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+#header-logo {
+    width: 200px; /* adjust to whatever size you want */
+}
+
+
+
 h1 {
   font-family: "BethEllen-Regular", system-ui;
   font-size:72px;
