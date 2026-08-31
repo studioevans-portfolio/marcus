@@ -99,10 +99,6 @@ header{
 
 
 
-#header-logo {
-    width: 200px;
-}
-
 
 .menu-toggle{
     display:none;
@@ -543,7 +539,7 @@ color: white;
 @media (max-width: 768px) {
     h3 {
         font-family: 'Beth Ellen', cursive;
-}
+	}}
 
 
 
@@ -557,12 +553,16 @@ nav a:hover,
 
 }
 
-
+	
+	
 footer{
-    padding:60px 0;
+    padding-bottom:30px;
     border-top:1px solid #222;
 
 }
+	
+	
+	
 
 footer p {
     margin: 0;
@@ -575,8 +575,9 @@ footer p {
 footer a {
     color: #fff;
     text-decoration: none;
+	
 }
 
-footer a:hover {
+	footer a:hover {
     text-decoration: underline;
-}
+	}
