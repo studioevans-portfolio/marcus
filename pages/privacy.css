@@ -138,6 +138,10 @@ header .container{
 }
 
 
+#header-logo {
+    width: 200px; /* adjust to whatever size you want */
+}
+
 h1 a{
     color:#ffffff;
     text-decoration:none;
@@ -181,6 +185,9 @@ a:focus {
 .hero{
  padding: 60px 0px 30px 0px;
 }
+
+
+
 
 .hero-grid{
     display:grid;
@@ -249,7 +256,7 @@ a.button.secondary:hover {
 
 
 .section {
-    padding: 60px 0px 60px 0px;
+    padding: 0px 0px 60px 0px;
 }
 
 
