@@ -272,7 +272,18 @@ a:focus {
 
 
 
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 50px;
+}
 
+@media (max-width:768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
@@ -281,13 +292,7 @@ a:focus {
     margin:auto;
 }
 
-@media(max-width:768px){
-.hero-grid{
-    display:inherit;
-	grid-template-columns:1fr 300px;
-    align-items:center;
-	}
-}
+
 
 #headshot {
     width:100%;
@@ -298,7 +303,7 @@ a:focus {
 
 @media(max-width:768px){
 #headshot {
-  display: none;
+    max-width: 280px;
 }
 }
 
@@ -486,9 +491,7 @@ margin: 0px 30px 0px 0px;
         z-index:1001;
     }
 
-    .hero-grid{
-        grid-template-columns:1fr;
-    }
+  
 
   
 
