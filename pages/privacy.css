@@ -99,28 +99,9 @@ header{
 }
 
 
-h1 {
-  font-family: "Beth Ellen", "Arial", "sans-serif";
-  font-size:72px;
-  font-weight: 400;
-		line-height: 95px;
-  font-style: normal;
-color: white;
-}
-
-
-h2, h3 {
-  font-family: "Beth Ellen", "Arial", "sans-serif";
- font-optical-sizing: auto;
-  font-weight: 400;
-		line-height: 70px;
-  font-style: normal;
-color: white;
-}
-
 body {
    font-family: "Arial", serif;
-  font-optical-sizing: auto;
+ font-size: 16px;
   font-weight: 300;
 	line-height: 20px;
   font-style: normal;
@@ -129,10 +110,40 @@ body {
 }
 
 
+
+
+
+
+
+
+h2 {
+  font-family: "Beth Ellen", "Arial", "sans-serif";
+ font-size: 38px;
+  font-weight: 300;
+	line-height: 35px;
+  font-style: normal;
+	 background:#1e2620;
+	color: white;
+}
+
+
+h3 {
+  font-family: "Beth Ellen", "Arial", "sans-serif";
+ font-optical-sizing: auto;
+  font-weight: 400;
+		line-height: 70px;
+  font-style: normal;
+color: white;
+}
+
+
+
+
+
 h4 {
  font-family: "Arial", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 5	00;
 	line-height: 20px;
   font-style: normal;
 	color: white;
@@ -150,6 +161,7 @@ h5{
 	 background:#1e2620;
 	color: white;
 }
+
 
 
 
