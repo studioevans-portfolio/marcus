@@ -126,7 +126,7 @@ header .container {
 
 
 h1 {
-  font-family: "BethEllen-Regular", system-ui;
+  font-family: "Beth Ellen", "Arial", "sans-serif";
   font-size:72px;
   font-weight: 400;
 		line-height: 95px;
@@ -136,7 +136,7 @@ color: white;
 
 
 h2, h3 {
-  font-family: "BethEllen-Regular", system-ui;
+  font-family: "Beth Ellen", "Arial", "sans-serif";
  font-optical-sizing: auto;
   font-weight: 400;
 		line-height: 70px;
