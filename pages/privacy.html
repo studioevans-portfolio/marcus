@@ -31,19 +31,20 @@
 
 	
 	<header>
-    <div class="container">
+    <div class="header-container">
 
-       <a href="https://www.marcuswyn.com">
-			<img id="header-logo" src="images/marcus-wyn-logo.png" alt="Marcus Wyn logo"></a>
+        <a href="https://www.marcuswyn.com">
+            <img id="header-logo" src="images/marcus-wyn-logo.png" alt="Marcus Wyn logo">
+        </a>
 
         <button class="menu-toggle" aria-label="Open menu">
             ☰
         </button>
 
-<nav id="mobileNav">
-			 <a href="https://marcuswyn.com/#portfolio">Portfolio</a>
-            <a href="https://marcuswyn.com/#about">About</a>
-            <a href="https://marcuswyn.com/#contact">Contact</a>
+        <nav id="mobileNav">
+            <a href="https://www.marcuswyn.com/#work">Work</a>
+            <a href="https://www.marcuswyn.com/#about">About</a>
+            <a href="https://www.marcuswyn.com/#contact">Contact</a>
         </nav>
 
     </div>
@@ -58,7 +59,7 @@
 <section class="hero">
     <div class="container hero-grid">
         <div>
-            <p class="eyebrow">Last updated: 2 September 2026</p>
+            <p class="eyebrow">Last updated: 1 October 2026</p>
             <h2>Privacy Policy</h2>
   </div>
 
@@ -153,7 +154,25 @@ If you have any questions about this Privacy Policy, please contact:
 </section>
 		
 	
-		
+		<script>
+
+const header = document.querySelector('header');
+const showreel = document.querySelector('.showreel');
+
+function updateHeader() {
+    const showreelBottom = showreel.offsetTop + showreel.offsetHeight;
+
+    if (window.scrollY >= showreelBottom) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+}
+
+window.addEventListener('scroll', updateHeader);
+updateHeader();
+
+</script>
 
 	
 	
@@ -181,5 +200,7 @@ menuBtn.addEventListener('click', () => {
 
 
 </footer>
+	
+	
 	</body>		
 </html>
