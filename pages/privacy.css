@@ -75,16 +75,18 @@ a:hover {
 }
 
 
-nav{
-    display:flex;
-    gap:24px;
-}
 
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#1e2620;
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 25px 0;
+	   transition: background 0.3s ease;
 }
 
 
@@ -167,27 +169,92 @@ h5{
 
 
 
-.container{
-    width:min(1100px,90%);
-    margin:auto;
+.container {
+    width: min(1400px, calc(100% - 80px));
+    margin: 0 auto;
 }
 
-header{
-    padding:30px 0;
-    position:sticky;
-    top:0;
-    background:#1e2620;
+/* ==================================================
+   HEADER
+================================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    padding: 25px 0;
+	   transition: background 0.3s ease;
 }
 
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+header.scrolled {
+    background: #152019;
+}
+
+
+.header-container {
+    width: min(1400px, calc(100% - 80px));
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo-link {
+    display: block;
 }
 
 
 #header-logo {
-    width: 200px; /* adjust to whatever size you want */
+    width: 180px;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+nav a {
+    color: #ffffff;
+
+    font-size: 15px;
+
+    transition: color 0.3s ease;
+}
+
+
+nav a:hover {
+    color: #5FAD56;
+}
+
+
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    cursor: pointer;
 }
 
 h1 a{
@@ -217,15 +284,7 @@ color: white;
 	margin-top: -10px;
 }
 
-nav a{
-    color:#ffffff;
-    text-decoration:none;
-}
 
-nav a:hover {
-    color:#5FAD56;
-     text-decoration:none;
-}
 
 
 a,
@@ -242,7 +301,7 @@ a:focus {
 
 
 .hero{
- padding: 60px 0px 30px 0px;
+ padding: 160px 0px 30px 0px;
 }
 
 
@@ -395,3 +454,6 @@ footer{
     padding:60px 0;
     border-top:1px solid #222;
 }
+
+
+
