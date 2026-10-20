@@ -550,6 +550,7 @@ nav.querySelectorAll('a').forEach(function(link) {
 	
 	
 	
+
 <script>
 const header = document.querySelector('header');
 const workSection = document.querySelector('#work');
@@ -557,7 +558,7 @@ const workSection = document.querySelector('#work');
 function updateHeader() {
     const triggerPoint = workSection.offsetTop;
 
-    if (window.scrollY >= triggerPoint) {
+    if (window.scrollY >= triggerPoint && window.scrollY > 0) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
@@ -565,8 +566,8 @@ function updateHeader() {
 }
 
 window.addEventListener('scroll', updateHeader);
-updateHeader();
 </script>
+
 
 </body>
 
