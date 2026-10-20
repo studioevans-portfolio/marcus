@@ -549,15 +549,15 @@ nav.querySelectorAll('a').forEach(function(link) {
 
 	
 	
-	<script>
-
+	
+<script>
 const header = document.querySelector('header');
-const showreel = document.querySelector('.showreel');
+const workSection = document.querySelector('#work');
 
 function updateHeader() {
-    const showreelBottom = showreel.offsetTop + showreel.offsetHeight;
+    const triggerPoint = workSection.offsetTop;
 
-    if (window.scrollY >= showreelBottom) {
+    if (window.scrollY >= triggerPoint) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
@@ -566,8 +566,8 @@ function updateHeader() {
 
 window.addEventListener('scroll', updateHeader);
 updateHeader();
-
 </script>
+
 </body>
 
 </html>
