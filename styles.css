@@ -288,16 +288,10 @@ nav a:hover {
 
 .work-grid {
     width: min(1400px, calc(100% - 80px));
-
     margin: 0 auto;
-
     display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    column-gap: 50px;
-
-    row-gap: 120px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 90px 40px;
 }
 
 
@@ -329,33 +323,56 @@ nav a:hover {
    WORK IMAGES
 ================================================== */
 
+
 .work-image {
+    position: relative;
     width: 100%;
-
+    aspect-ratio: 16 / 9;
     overflow: hidden;
-
     background: #151b17;
 }
 
-
 .work-image img {
+    position: absolute;
+    inset: 0;
     width: 100%;
-
-    aspect-ratio: 16 / 9;
-
+    height: 100%;
     object-fit: cover;
-
-    transition:
-        transform 0.7s ease,
-        opacity 0.4s ease;
+    display: block;
+    transition: transform 0.7s ease, opacity 0.4s ease;
 }
 
+.work-image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    pointer-events: none;
+}
+
+.work-image-overlay h3 {
+    color: #fff;
+    font-size: clamp(20px, 2.2vw, 34px);
+    font-weight: 700;
+    line-height: 1.3;
+}
 
 .work-item a:hover .work-image img {
     transform: scale(1.025);
-
     opacity: 0.9;
 }
+
+.work-item a:hover .work-image-overlay {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
 
 
 /* ==================================================
@@ -651,10 +668,10 @@ footer {
 
 
     .work-grid {
-        grid-template-columns: 1fr;
-
-        row-gap: 80px;
-    }
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 25px;
+    row-gap: 80px;
+}
 
 
     .work-item:nth-child(1),
