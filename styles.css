@@ -53,6 +53,8 @@ a:hover {
 ================================================== */
 
 
+
+
 header {
     position: fixed;
     top: 0;
@@ -60,13 +62,19 @@ header {
     width: 100%;
     z-index: 1000;
     background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 25px 0;
     transition: background 0.3s ease;
 }
 
 header.scrolled {
-    background: #152019;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
 }
+
+
 
 
 
@@ -744,7 +752,7 @@ footer {
 
         padding: 22px;
 
-        background: #171717;
+  background: #152019;
 
         border-radius: 0 0 10px 10px;
     }
