@@ -712,6 +712,9 @@ footer {
         padding: 20px 0;
     }
 
+	
+
+	
 
     .header-container {
         width: calc(100% - 40px);
@@ -731,6 +734,8 @@ footer {
     nav {
         display: none;
     }
+
+	
 
 
     nav.active {
@@ -994,3 +999,14 @@ footer {
     }
 
 }
+
+
+
+
+@media (max-width: 768px) {
+    header:has(nav.active) {
+        background: #152019;
+    }
+}
+
+
