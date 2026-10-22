@@ -329,6 +329,16 @@ nav a:hover {
     width: 100%;
 }
 
+.unesco-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.solo-grid .work-item {
+    max-width: 600px;
+}
+
+
 
 /* ==================================================
    WORK IMAGES
