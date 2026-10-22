@@ -416,28 +416,28 @@ window.addEventListener('scroll', updateHeader);
 
 
 
+
 <script>
-function scrollToAbout() {
-    if (window.location.hash !== '#about') return;
+function scrollToSection() {
+    const hash = window.location.hash;
+    if (hash !== '#about' && hash !== '#work') return;
 
-    const about = document.getElementById('about');
-    if (!about) return;
+    const section = document.querySelector(hash);
+    if (!section) return;
 
-    const top = about.getBoundingClientRect().top
-        + window.scrollY
-        - 20;
-
-    window.scrollTo(0, top);
+    window.scrollTo({
+        top: section.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: 'instant'
+    });
 }
 
 window.addEventListener('load', function () {
-    scrollToAbout();
-
-    // Recalculate after the page layout has settled.
-    setTimeout(scrollToAbout, 300);
-    setTimeout(scrollToAbout, 1000);
+    scrollToSection();
+    setTimeout(scrollToSection, 300);
+    setTimeout(scrollToSection, 1000);
 });
 </script>
+
 
 
 
