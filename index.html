@@ -209,6 +209,7 @@
             </a>
 
         </article>
+	</div>
 
 </section>
 
@@ -414,6 +415,29 @@ window.addEventListener('scroll', updateHeader);
 </script>
 
 
+
+<script>
+function scrollToAbout() {
+    if (window.location.hash !== '#about') return;
+
+    const about = document.getElementById('about');
+    if (!about) return;
+
+    const top = about.getBoundingClientRect().top
+        + window.scrollY
+        - 20;
+
+    window.scrollTo(0, top);
+}
+
+window.addEventListener('load', function () {
+    scrollToAbout();
+
+    // Recalculate after the page layout has settled.
+    setTimeout(scrollToAbout, 300);
+    setTimeout(scrollToAbout, 1000);
+});
+</script>
 
 
 
