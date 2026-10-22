@@ -329,7 +329,7 @@ nav a:hover {
     width: 100%;
 }
 
-.unesco-grid {
+.solo-grid {
     grid-template-columns: 1fr;
     justify-items: center;
 }
