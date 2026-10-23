@@ -389,21 +389,7 @@ nav a:hover {
     isolation: isolate;
 }
 
-/* Outer, weathered-looking frame */
-.work-grid article::before,
-.about-image::before {
-    content: "";
-    position: absolute;
-    inset: -7px;
-    z-index: -1;
-    background: #5C4033;
-    border: 1px solid #964B00;
-    box-shadow:
-        2px 2px 0 #5C4033,
-        -2px -1px 0 rgba(164, 154, 120, 0.35);
-    transform: rotate(-0.25deg);
-    transition: background 0.3s ease;
-}
+
 
 /* Fine inner edge */
 .work-grid article::after,
