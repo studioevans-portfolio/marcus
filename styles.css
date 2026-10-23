@@ -382,6 +382,54 @@ nav a:hover {
 ================================================== */
 
 
+/* Rustic project frames */
+.work-grid article,
+.about-image {
+    position: relative;
+    isolation: isolate;
+}
+
+/* Outer, weathered-looking frame */
+.work-grid article::before,
+.about-image::before {
+    content: "";
+    position: absolute;
+    inset: -7px;
+    z-index: -1;
+    background: #5C4033;
+    border: 1px solid #964B00;
+    box-shadow:
+        2px 2px 0 #5C4033,
+        -2px -1px 0 rgba(164, 154, 120, 0.35);
+    transform: rotate(-0.25deg);
+    transition: background 0.3s ease;
+}
+
+/* Fine inner edge */
+.work-grid article::after,
+.about-image::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    z-index: 2;
+    border: 1px solid rgba(225, 213, 177, 0.3);
+    pointer-events: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Subtle hover treatment */
+.work-grid article:hover::before,
+.about-image:hover::before {
+    background: #5C4033;
+}
+
+.work-grid article:hover::after,
+.about-image:hover::after {
+    border-color: rgba(225, 213, 177, 0.65);
+}
+
+
+
 .work-image {
     position: relative;
     width: 100%;
@@ -721,7 +769,7 @@ footer {
    TABLET
 ================================================== */
 
-@media (max-width: 900px) {
+@media (max-width : 1247px ){
 
 
     .header-container,
@@ -1086,5 +1134,3 @@ footer {
         background: #152019;
     }
 }
-
-
